@@ -8,14 +8,15 @@ for  $i (0..$#ARGV-1)
 	$msg="";
 		while (<file>)
 		{
-			if ($_=~/^[\d\s]+/s){$msg.=$_;}
+			if ($_=~/^(?:\d|\s)*/s){$msg.=$_;}
   			else
 				{
 					$msg="";
 					last;
 				}		
 		}
-	$res.=$msg;
+	eval { $res.=$msg;}; 
+	if ($@){die "all the bad memory =(";}
 	close @ARGV[$i];
 }
 
