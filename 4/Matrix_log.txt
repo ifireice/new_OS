@@ -1,0 +1,45 @@
+time  ./Matrix_tiling.out
+
+size 512
+
+real	0m19.292s
+user	0m19.061s
+sys	0m0.016s
+
+size  1024
+
+real	2m56.087s
+user	2m49.071s
+sys	0m0.252s
+
+
+size 2048
+
+real	23m8.352s
+user	22m33.485s
+sys	0m1.740s
+
+
+##################################
+
+
+time ./Matrix.out
+
+size 512
+
+real	0m28.818s
+user	0m28.198s
+sys	0m0.024s
+
+size 1024
+
+real	4m0.654s
+user	3m49.642s
+sys	0m0.712s
+
+size 2048
+
+real	28m45.351s
+user	28m25.635s
+sys	0m0.744s
+
