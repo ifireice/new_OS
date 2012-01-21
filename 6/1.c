@@ -1,4 +1,4 @@
 void print ()
 {
-	*(short*)0xb8000 = 0xсс06;
+	*(short *)0xb8000 = 0x0D06;
 }
