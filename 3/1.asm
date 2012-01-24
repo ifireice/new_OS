@@ -1,0 +1,7 @@
+mov ax, 0x0A02
+mov bx, 0x0007
+mov cx, 0x10
+int 0x10
+cli
+hlt
+
